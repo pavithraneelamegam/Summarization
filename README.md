@@ -1,14 +1,3 @@
 # **INTRODUCTION**
 This repository contains the implementation, trained models, and experimental scripts for abstractive summarization system developed for long-form legal case judgment summarization.
  
- **Finetuned BART – Legal Judgment Summarization Script**
-This script provides a complete end-to-end pipeline for training, evaluating, and applying a fine-tuned BART model for abstractive summarization of legal case judgments. It includes comprehensive preprocessing, supervised model training using reference summaries, generation of test summaries, and an embedding-based faithfulness scoring module.
-
- **Finetuned Legal-LED – Long-Document Abstractive Summarization Script**
-This script implements a full pipeline for fine-tuning and evaluating the Longformer Encoder–Decoder (LED) model on lengthy legal judgments. LED is designed for extremely long input sequences, making it ideal for Indian court judgments that frequently exceed conventional transformer limits.Tokenization using LED’s extended attention window, enabling effective processing of multi-page case records. Fine-tuning LED with HuggingFace’s sequence-to-sequence framework optimized for long-range dependencies.
-
- **Fine-Tuned Legal-Pegasus – Gap-Sentence Pretraining Based Legal Summarization Script** 
-This script provides the workflow for fine-tuning Legal-Pegasus, a Pegasus model adapted to legal corpora using gap-sentence pretraining. Pegasus excels at high-quality abstractive generation, making it effective for producing human-style legal summaries.Pegasus tokenizer and transformer architecture, optimized for abstractive rewriting through its masked-gap objective.Fluent, coherent summary generation even for complex legal arguments. Embedding similarity scoring using encoder representations to evaluate semantic faithfulness. This Pegasus-based script is ideal for high-fluency, human-like abstractive summarization of court judgments.
-
-**Fine-Tuned T5 – Unified Text-to-Text Summarization Script for Legal Judgments**
-This script implements training and inference for a T5-based model, leveraging the text-to-text framework to cast legal summarization as a sequence generation task. T5’s flexible architecture allows it to learn task-specific patterns in legal reasoning and summary construction.Concise summary generation focusing on key legal issues, orders, and factual elements.
