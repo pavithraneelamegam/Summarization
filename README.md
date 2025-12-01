@@ -32,3 +32,7 @@ This script implements training and inference for a T5-based model, leveraging t
 It is a multi-model framework built to generate high-quality summaries for long and complex Indian court judgments. It integrates three complementary encoder–decoder models—**BART** for fluent abstractive generation, **Pegasus** for high-compression summarization, and **Longformer-Encoder-Decoder (LED)** for processing very long documents. Each model produces a 400–500-word summary, after which a **semantic reranking step** selects the best output using cosine similarity computed from fine-tuned BART encoder embeddings. This ensures that the final summary is both coherent and highly relevant to the original judgment.
 
 
+**Retriever Driven Multi Generator Summarizer**
+This script provides a Retrieval-Augmented Generation (RAG) system for summarizing long Indian court judgments. It cleans and chunks each judgment, retrieves the most relevant parts using InLegalBERT embeddings, and generates 400–500-word summaries using fine-tuned BART, PEGASUS, and LED models. LED is used when longer context handling is needed. The final summary is refined to meet word limits and evaluated using cosine similarity between BART encoder embeddings of the judgment and the summary. All outputs—summaries and similarity scores—are saved in JSONL format, forming a complete and efficient pipeline for legal abstractive summarization.
+
+
