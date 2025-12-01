@@ -46,5 +46,5 @@ Measures lexical overlap between generated summaries and reference summaries.
 
 ROUGE-L captures sentence-level structure and is particularly important for long legal texts.
 
-**BLEU Score**
+**2. BLEU Score**
 BLEU is used as an quantitative evaluation metric to measure how closely the generated legal summaries match the reference summaries provided in the training/validation datasets.
