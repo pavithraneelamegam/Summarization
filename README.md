@@ -16,6 +16,8 @@ Validation	200	samples:val_judg.jsonl, reference summaries hidden
 
 Test	400 samples:	test_judg.jsonl, reference summaries hidden
 
+ # **⚖️ Legal Summarization Framework**
+ 
  **Finetuned BART – Legal Judgment Summarization Script**
 This script provides a complete end-to-end pipeline for training, evaluating, and applying a fine-tuned BART model for abstractive summarization of legal case judgments. It includes comprehensive preprocessing, supervised model training using reference summaries, generation of test summaries, and an embedding-based faithfulness scoring module.
 
