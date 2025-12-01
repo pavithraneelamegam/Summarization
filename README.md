@@ -28,3 +28,7 @@ This script provides the workflow for fine-tuning Legal-Pegasus, a Pegasus model
 **Fine-Tuned T5 – Unified Text-to-Text Summarization Script for Legal Judgments**
 This script implements training and inference for a T5-based model, leveraging the text-to-text framework to cast legal summarization as a sequence generation task. T5’s flexible architecture allows it to learn task-specific patterns in legal reasoning and summary construction.Concise summary generation focusing on key legal issues, orders, and factual elements.
 
+ **Legal Ensemble Summarizer**
+It is a multi-model framework built to generate high-quality summaries for long and complex Indian court judgments. It integrates three complementary encoder–decoder models—**BART** for fluent abstractive generation, **Pegasus** for high-compression summarization, and **Longformer-Encoder-Decoder (LED)** for processing very long documents. Each model produces a 400–500-word summary, after which a **semantic reranking step** selects the best output using cosine similarity computed from fine-tuned BART encoder embeddings. This ensures that the final summary is both coherent and highly relevant to the original judgment.
+
+
