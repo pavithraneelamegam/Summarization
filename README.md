@@ -37,7 +37,7 @@ It is a multi-model framework built to generate high-quality summaries for long 
 **Retriever Driven Multi Generator Summarizer**
 This script provides a Retrieval-Augmented Generation (RAG) system for summarizing long Indian court judgments. It cleans and chunks each judgment, retrieves the most relevant parts using InLegalBERT embeddings, and generates 400–500-word summaries using fine-tuned BART, PEGASUS, and LED models. LED is used when longer context handling is needed. The final summary is refined to meet word limits and evaluated using cosine similarity between BART encoder embeddings of the judgment and the summary. All outputs—summaries and similarity scores—are saved in JSONL format, forming a complete and efficient pipeline for legal abstractive summarization.
 
-#**📊 Evaluation Criteria**
+# **📊 Evaluation Criteria**
 The performance of all legal summarization models in this repository is assessed using a combination of quantitative, semantic, and task-specific evaluation metrics tailored for legal document summarization:
 
 **1. ROUGE Metrics (ROUGE-1, ROUGE-2, ROUGE-L)**
