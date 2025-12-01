@@ -41,7 +41,6 @@ This script provides a Retrieval-Augmented Generation (RAG) system for summarizi
 The performance of all legal summarization models in this repository is assessed using a combination of quantitative, semantic, and task-specific evaluation metrics tailored for legal document summarization:
 
 **1. ROUGE Metrics (ROUGE-1, ROUGE-2, ROUGE-L)**
-
 Measures lexical overlap between generated summaries and reference summaries. ROUGE-L captures sentence-level structure and is particularly important for long legal texts.
 
 **2. BLEU Score**
